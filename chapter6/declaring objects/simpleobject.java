@@ -20,7 +20,7 @@ public class simpleobject {
 
         System.out.println("volume of a1 " + vol);
         System.out.println("line tracking1");
-        box1 a2;
+        box1 a2; // declarating reference to the object 
         a2 = a1;
 
         System.out.println(a2.height);
