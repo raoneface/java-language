@@ -19,6 +19,6 @@ public class Boxdemo{
         a2.height=10;
         a2.width=110;
         a2.length=30;
-        volume = a.height * a1.width * a1.length;
+        volume = a2.height * a2.width * a2.length;
     }
 }
