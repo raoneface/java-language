@@ -12,5 +12,13 @@ public class Boxdemo{
         a1.length=10;
         volume = a1.height * a1.width * a1.length;
         System.out.println("Volume of box :" + volume);
+        
+        box a2 = new box();
+        
+        
+        a2.height=10;
+        a2.width=110;
+        a2.length=30;
+        volume = a.height * a1.width * a1.length;
     }
 }
