@@ -1,27 +1,33 @@
 class Test {
-    int a, b;
+    int i;
+    int j;
 
-    Test(int i, int j) {
-        a = i;
-        b = j;
+    Test(int a, int b) {
+        i = a;
+        j = b;
     }
 
-    boolean equalTo(Test o) {
-        if (o.a == a && o.b == b)
+    boolean checkobject(Test o) {
+        if (o.i == i && o.j == j) {
             return true;
-        else
+        } else {
             return false;
+        }
     }
 }
 
 public class PassOb {
     public static void main(String[] args) {
-        Test ob1 = new Test(100, 200);
-        Test ob2 = new Test(100, 200);
-        Test ob3 = new Test(200, 100);
 
-        System.out.println("ob1 == ob2: " + ob1.equalTo(ob2));
+        Test ob = new Test(12, 130);
 
-        System.out.println("ob2 == ob3: " + ob1.equalTo(ob3));
+        Test ob1 = new Test(12, 130);
+
+        System.out.println(ob.checkobject(ob1));
+
+        Test ob2 = new Test(12, 01);
+
+        System.out.println(ob2.checkobject(ob));
+
     }
 }
