@@ -15,5 +15,12 @@ public class StringDemo2 {
             System.out.println("str01 == str02");
         else
             System.out.println("str01 != str01");
+        
+            if (str01.equals(str03))
+            System.out.println("str01 == str03");
+        else
+            System.out.println("str01 != str03");
+
+        
     }
 }
